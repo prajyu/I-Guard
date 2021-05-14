@@ -12,7 +12,7 @@ Turn your mobile into a **Smart CCTV**
 git clone https://github.com/prajyu/I-Guard.git
 
 // Open cloned directory
-cd smart_security_cam
+cd I-Guard
 
 // Install package.json file
 npm i
