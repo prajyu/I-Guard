@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/static/css/home.css" type="text/css" media="all" />
+    <meta name="" content="">
+    <title></title>
+  </head>
+  <body>
+    <div class="master">
+      <div class="container">
+      <video hidden class="input_video"></video>
+      <canvas class="output_canvas" width="480px" height="720px"></canvas>
+      <button id="start-record" hidden type="submit"></button>
+    </div>
+    <div class="control">
+      <form action="#" id="control" accept-charset="utf-8">
+        <div class="wrapper">
+          <input type="radio" name="select" id="user" value="user" checked>
+          <input type="radio" name="select" id="environment" value="environment">
+          <label for="user" class="option user">
+              <div class="dot"></div>
+                <span>User</span>
+            </label>
+          <label for="environment" class="option environment">
+              <div class="dot"></div>
+                <span>Environment</span>
+            </label>
+          </div>
+        <button type="submit">Start Camera</button>
+      </form>
+    </div>
+    </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.1/drawing_utils.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection@0.0/face_detection.js" crossorigin="anonymous"></script>
+    <script defer src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script defer src="https://www.webrtc-experiment.com/screenshot.js"></script>
+    <script defer src="/static/js/home.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

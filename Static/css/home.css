@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+ }
+      
+.master {
+  position: absolute;
+ }
+      
+.container {
+  position: relative;
+ }
+      
+.output_canvas {
+  position: relative;
+  margin: 10vw;
+ }
+ 
+.control {
+  position: relative;
+  padding: 20vw;
+}
+
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#user:checked:checked ~ .user,
+#environment:checked:checked ~ .environment{
+  border-color: #0069d9;
+  background: #0069d9;
+}
+#user:checked:checked ~ .user .dot,
+#environment:checked:checked ~ .environment .dot{
+  background: #fff;
+}
+#user:checked:checked ~ .user .dot::before,
+#environment:checked:checked ~ .environment .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#user:checked:checked ~ .user span,
+#environment:checked:checked ~ .environment span{
+  color: #fff;
+}
+
+button {
+  position: fixed;
+  background: #0069d9;
+  top: 0;
+  right: 0;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  text-shadow:none;
+}

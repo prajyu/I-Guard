@@ -1,0 +1,20 @@
+{
+  "name": "I-Guard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "run": "node server.js"
+  },
+  "keywords": [],
+  "author": "Prajyu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "fs": "*",
+    "multer": "^1.4.2",
+    "twilio": "^3.61.0"
+  }
+}
